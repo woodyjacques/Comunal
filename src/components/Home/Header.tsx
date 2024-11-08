@@ -10,6 +10,7 @@ function Header() {
                 <div className="text-2xl font-extrabold">Plataforma de Negocios Comunal</div>
                 <nav className="hidden md:flex space-x-8">
                     <a href="#" className="hover:underline">Inicio</a>
+                    <a href="/login" className="hover:underline">Sesión</a>
                     <a href="#about" className="hover:underline">Nosotros</a>
                     <a href="#subscription" className="hover:underline">Suscripción</a>
                     <a href="#contact" className="hover:underline">Contacto</a>
