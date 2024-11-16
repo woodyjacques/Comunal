@@ -1,105 +1,50 @@
-import { useState } from 'react';
-
-interface Business {
-    name: string;
-    category: string;
-    commune: string;
-}
-
 function Section1() {
-    const [category, setCategory] = useState('');
-    const [commune, setCommune] = useState('');
-    const [results, setResults] = useState<Business[]>([]);
-
-    const categories = ["Panadería", "Ferretería", "Verdulería"];
-    const communes = ["Santiago", "Providencia", "Ñuñoa"];
-
-    const handleSearch = () => {
-        const businessData: Business[] = [
-            { name: "Panadería Doña Rosa", category: "Panadería", commune: "Santiago" },
-            { name: "Ferretería Los Pinos", category: "Ferretería", commune: "Providencia" },
-            { name: "Verdulería El Huerto", category: "Verdulería", commune: "Ñuñoa" },
-        ];
-
-        const filteredResults = businessData.filter(business =>
-            (category === '' || business.category === category) &&
-            (commune === '' || business.commune === commune)
-        );
-
-        setResults(filteredResults);
-    };
-
-    const handleClear = () => {
-        setCategory('');
-        setCommune('');
-        setResults([]);
-    };
-
     return (
-        <div>
-            <section className="text-center py-20 bg-yellow-500">
-                <h1 className="text-5xl font-bold mb-4 text-black">Busca y Encuentra en la Región Metropolitana</h1>
-                <p className="text-lg text-gray-800 mb-8">La plataforma que conecta negocios locales con la comunidad</p>
-                <div className="flex justify-center flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
-
-                    <select
-                        value={category}
-                        onChange={(e) => setCategory(e.target.value)}
-                        className="px-4 py-2 rounded w-64 md:w-80 border border-gray-300"
-                    >
-                        <option value="">Selecciona Rubro y/o Subcategoría</option>
-                        {categories.map((cat, index) => (
-                            <option key={index} value={cat}>
-                                {cat}
-                            </option>
-                        ))}
-                    </select>
-
-                    <select
-                        value={commune}
-                        onChange={(e) => setCommune(e.target.value)}
-                        className="px-4 py-2 rounded w-64 md:w-80 border border-gray-300"
-                    >
-                        <option value="">Selecciona Comuna</option>
-                        {communes.map((com, index) => (
-                            <option key={index} value={com}>
-                                {com}
-                            </option>
-                        ))}
-                    </select>
-
-                    <button
-                        onClick={handleSearch}
-                        className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition"
-                    >
-                        Encuentra
-                    </button>
-
-                    <button
-                        onClick={handleClear}
-                        className="bg-gray-300 text-black px-6 py-2 rounded-lg hover:bg-gray-400 transition"
-                    >
-                        Limpiar
-                    </button>
+        <section className="bg-yellow-500 py-12">
+            <div className="max-w-6xl mx-auto px-4 text-center">
+                <div className="mb-8">
+                    <div className="relative h-64 md:h-80">
+                        <img
+                            src="https://media.istockphoto.com/id/655540014/es/foto/comercial-icono-de-carro-de-teclado-de-la-computadora.jpg?s=170667a&w=0&k=20&c=6R9rKElbt5-i_l8x5D0lMBMx-GZ3YJ9ckG2SU-o2AlA="
+                            alt="Teclado"
+                            className="w-full h-full object-cover rounded-lg"
+                        />
+                        <h1 className="absolute inset-0 flex items-center justify-center text-6xl md:text-7xl font-bold text-yellow-500">
+                            Busca y Encuentra RM
+                        </h1>
+                    </div>
                 </div>
 
-                <div className="mt-10">
-                    {results.length > 0 ? (
-                        <ul className="text-left space-y-4">
-                            {results.map((business, index) => (
-                                <li key={index} className="bg-white p-4 rounded shadow-md">
-                                    <h3 className="text-2xl font-bold text-yellow-600">{business.name}</h3>
-                                    <p className="text-gray-700">Categoría: {business.category}</p>
-                                    <p className="text-gray-700">Comuna: {business.commune}</p>
-                                </li>
-                            ))}
-                        </ul>
-                    ) : (
-                        <p className="text-lg text-gray-700">No se encontraron negocios para los filtros seleccionados.</p>
-                    )}
+                <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-6 px-4">
+                    <select className="bg-white text-black text-2xl py-4 px-6 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-600 w-full md:w-1/2">
+                        <option>Selecciona Rubro y/o Subcategoría</option>
+                    </select>
+                    <select className="bg-white text-black text-2xl py-4 px-6 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-600 w-full md:w-1/2">
+                        <option>Selecciona Comuna</option>
+                    </select>
                 </div>
-            </section>
-        </div>
+
+                <div className="flex flex-col md:flex-row items-center justify-end gap-4 mb-6 pr-4">
+
+                    <div className="flex items-center gap-2">
+                        <button className="bg-black text-yellow-500 text-2xl font-bold py-4 px-10 rounded-lg hover:bg-gray-800 transition shadow-lg">
+                            Encuentra
+                        </button>
+                        <span className="text-3xl text-red-600">🔍</span>
+                    </div>
+
+                    <div className="bg-cyan-400 text-black text-sm p-4 rounded-lg shadow-md max-w-md relative">
+                        <span className="absolute top-2 left-2 w-10 h-10 transform rotate-[-15deg]">
+                            <img src="https://ayto-reocin.com/wp-content/uploads/2021/02/alerta-logo.jpg" alt="Alerta" className="w-full h-full object-contain" />
+                        </span>
+                        <p className="pl-8">
+                            La pestaña Rubro podría considerar falta de ortografías, sinónimos de palabras y considerar palabras con falta de ortografía, quizás mediante Inteligencia Artificial. Así como ocurre en Google.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     );
 }
 

@@ -1,37 +1,18 @@
-import { useState } from "react";
-
 function Header() {
-
-    const [menuOpen, setMenuOpen] = useState(false);
-
     return (
-        <div>
-            <header className="flex justify-between items-center p-6 bg-yellow-600 text-white">
-                <div className="text-2xl font-extrabold">Plataforma de Negocios Comunal</div>
-                <nav className="hidden md:flex space-x-8">
-                    <a href="#" className="hover:underline">Inicio</a>
-                    <a href="/login" className="hover:underline">Sesión</a>
-                    <a href="#about" className="hover:underline">Nosotros</a>
-                    <a href="#subscription" className="hover:underline">Suscripción</a>
-                    <a href="#contact" className="hover:underline">Contacto</a>
+        <header className="bg-yellow-500 py-4 shadow-md">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 space-y-4 md:space-y-0">
+                <div className="text-center md:text-left">
+                    <span className="block font-bold text-lg text-black">Plataforma de Negocios Comunal</span>
+                    <span className="block text-sm text-black">Una Gran Avenida</span>
+                </div>
+                <nav>
+                    <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                        <li className="font-bold text-black text-center md:text-left">INICIO</li>
+                    </ul>
                 </nav>
-
-                <button
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    className="md:hidden bg-black px-4 py-2 rounded-lg">
-                    Menu
-                </button>
-            </header>
-
-            {menuOpen && (
-                <nav className="bg-yellow-600 text-white md:hidden px-8 py-4">
-                    <a href="#" className="block py-2 hover:bg-yellow-700">Inicio</a>
-                    <a href="#about" className="block py-2 hover:bg-yellow-700">Nosotros</a>
-                    <a href="#subscription" className="block py-2 hover:bg-yellow-700">Suscripción</a>
-                    <a href="#contact" className="block py-2 hover:bg-yellow-700">Contacto</a>
-                </nav>
-            )}
-        </div>
+            </div>
+        </header>
     );
 }
 

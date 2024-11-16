@@ -8,10 +8,10 @@ import UpEmail from "../view/UpEmail";
 
 const router = createBrowserRouter([
     { path: "/", element: <Home /> },
-    { path: "/register", element: <Register /> },
-    { path: "/login", element: <Login /> },
-    { path: "/verificacion-cuenta", element: <VerEmail /> },
-    { path: "/actualizacion-contraseña", element: <UpEmail /> }
+    // { path: "/register", element: <Register /> },
+    // { path: "/login", element: <Login /> },
+    // { path: "/verificacion-cuenta", element: <VerEmail /> },
+    // { path: "/actualizacion-contraseña", element: <UpEmail /> }
 ]);
 
 export default router;
