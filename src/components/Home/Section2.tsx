@@ -2,7 +2,7 @@ function Section2() {
     return (
         <section className="bg-yellow-500 text-black py-12 relative">
             <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                {/* Imagen con arco */}
+
                 <div className="flex justify-center items-center h-full">
                     <div className="overflow-hidden rounded-t-full bg-yellow-500 w-full">
                         <img
@@ -13,7 +13,6 @@ function Section2() {
                     </div>
                 </div>
 
-                {/* Texto y elementos interactivos */}
                 <div className="flex flex-col justify-between gap-6">
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full">
                         <span className="bg-black text-yellow-500 py-4 px-4 sm:py-6 sm:px-8 font-bold text-center col-span-2 text-sm sm:text-lg">
@@ -41,12 +40,10 @@ function Section2() {
                 </div>
             </div>
 
-            {/* Título principal */}
             <h2 className="text-4xl sm:text-5xl font-bold text-center mt-8 w-full">
                 REGIÓN METROPOLITANA
             </h2>
 
-            {/* Iconos de redes sociales */}
             <div className="absolute bottom-4 right-4 flex gap-4 flex-wrap justify-center sm:justify-end">
                 <a href="#" className="w-8 h-8 sm:w-10 sm:h-10">
                     <img
