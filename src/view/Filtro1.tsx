@@ -5,11 +5,20 @@ function Filtro1() {
     return (
         <div>
             <Header />
-            <div className="bg-yellow-500 min-h-screen py-8 px-8">
-               
+            <div
+                className="font-quicksand bg-yellow-500 min-h-screen py-8 px-8"
+                style={{
+                    backgroundImage:
+                        "url('https://static.vecteezy.com/system/resources/previews/001/339/645/non_2x/glowing-stylish-honeycomb-background-free-vector.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}
+            >
                 <div className="bg-black text-white rounded-lg p-4 mb-6">
-                    <p className="font-bold text-sm">ENCUENTRA LO QUE BUSCAS: PROVIDENCIA (EJEMPLO)</p>
-                    <p className="text-sm">TODOS PROVIDENCIA</p>
+                    <p className="font-bold text-sm">
+                        Encuentra lo que buscas: Providencia (ejemplo)
+                    </p>
+                    <p className="text-sm">Todos Providencia</p>
                     <div className="flex items-center mt-4">
                         <input
                             type="text"
@@ -27,26 +36,27 @@ function Filtro1() {
                 </div>
 
                 <div className="space-y-4">
-
+                    {/* Card 1 */}
                     <div className="bg-black text-white rounded-lg p-4 flex items-center justify-between">
                         <div>
-                            <p className="font-bold">Cafeterias (primero las suscritas)</p>
+                            <p className="font-bold">Cafeterías (primero las suscritas)</p>
                             <p className="text-sm">Cafetería Turca</p>
                         </div>
                         <div className="flex items-center space-x-4">
-                            <p className="text-sm">Botón acceso Ficha</p>
+                            <p className="text-sm">Acceso a ficha</p>
                             <button className="w-6 h-6 bg-white rounded-full"></button>
                             <p className="text-sm">Pinchar círculo blanco</p>
                         </div>
                     </div>
 
+                    {/* Card 2 */}
                     <div className="bg-black text-white rounded-lg p-4 flex items-center justify-between">
                         <div>
                             <p className="font-bold">Cortinas (primero las suscritas)</p>
                             <p className="text-sm">Cortinas Coloridas</p>
                         </div>
                         <div className="flex items-center space-x-4">
-                            <p className="text-sm">Botón acceso Ficha</p>
+                            <p className="text-sm">Acceso a ficha</p>
                             <button className="w-6 h-6 bg-white rounded-full"></button>
                             <p className="text-sm">Pinchar círculo blanco</p>
                         </div>

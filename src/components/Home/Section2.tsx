@@ -1,6 +1,11 @@
+
 function Section2() {
     return (
-        <section className="bg-yellow-500 text-black py-12 relative">
+        <section className="font-quicksand bg-yellow-500 text-black py-12 relative" style={{
+            backgroundImage: "url('https://static.vecteezy.com/system/resources/previews/001/339/645/non_2x/glowing-stylish-honeycomb-background-free-vector.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }}>
             <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
                 <div className="flex justify-center items-center h-full">
@@ -41,41 +46,41 @@ function Section2() {
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-bold text-center mt-8 w-full">
-                REGIÓN METROPOLITANA
+                Región metropolitana
             </h2>
 
             <div className="absolute bottom-4 right-4 flex gap-4 flex-wrap justify-center sm:justify-end">
                 <a href="#" className="w-8 h-8 sm:w-10 sm:h-10">
                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/61/61109.png"
+                        src="https://files.softicons.com/download/social-media-icons/flat-gradient-social-icons-by-guilherme-lima/png/512x512/Linkedin.png"
                         alt="LinkedIn"
                         className="w-full h-full object-contain"
                     />
                 </a>
                 <a href="#" className="w-8 h-8 sm:w-10 sm:h-10">
                     <img
-                        src="https://seeklogo.com/images/I/instagram-logo-E0067A1403-seeklogo.com.png"
+                        src="https://cdn-icons-png.flaticon.com/512/3955/3955027.png"
                         alt="Instagram"
                         className="w-full h-full object-contain"
                     />
                 </a>
                 <a href="#" className="w-8 h-8 sm:w-10 sm:h-10">
                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/59/59439.png"
+                        src="https://icons-for-free.com/iff/png/512/facebook+logo+media+network+social+icon-1320192913497992427.png"
                         alt="Facebook"
                         className="w-full h-full object-contain"
                     />
                 </a>
                 <a href="#" className="w-8 h-8 sm:w-10 sm:h-10">
                     <img
-                        src="https://s3-alpha.figma.com/hub/file/2729732820/69ab2bc1-7dda-4bf6-ac0b-adcb3e70b063-cover.png"
+                        src="https://cdn.iconscout.com/icon/free/png-256/free-youtube-104-432560.png?f=webp"
                         alt="YouTube"
                         className="w-full h-full object-contain"
                     />
                 </a>
                 <a href="#" className="w-8 h-8 sm:w-10 sm:h-10">
                     <img
-                        src="https://qwestore.com/png_images_min/10/bWhatsApp-blackb-logo-PNG-image-bBlack-3276.png"
+                        src="https://cdn.icon-icons.com/icons2/2972/PNG/512/whatsapp_logo_icon_186881.png"
                         alt="WhatsApp"
                         className="w-full h-full object-contain"
                     />

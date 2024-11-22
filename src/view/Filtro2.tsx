@@ -5,9 +5,19 @@ function Filtro1() {
     return (
         <div>
             <Header />
-            <div className="bg-yellow-500 min-h-screen py-8 px-4">
+            <div
+                className="font-quicksand bg-yellow-500 min-h-screen py-8 px-4"
+                style={{
+                    backgroundImage:
+                        "url('https://static.vecteezy.com/system/resources/previews/001/339/645/non_2x/glowing-stylish-honeycomb-background-free-vector.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}
+            >
                 <div className="bg-black text-white rounded-lg p-4 mb-6">
-                    <p className="font-bold text-sm">SUSCRITOS: PROVIDENCIA (EJEMPLO: LOS PRIMEROS/CLIENTES POR RUBRO Y COMUNA)</p>
+                    <p className="font-bold text-sm">
+                        Suscritos: Providencia (ejemplo: los primeros/clientes por rubro y comuna)
+                    </p>
                     <div className="flex items-center mt-4">
                         <input
                             type="text"
@@ -25,14 +35,14 @@ function Filtro1() {
                 </div>
 
                 <div className="space-y-4">
-
+                    
                     <div className="bg-black text-white rounded-lg p-4 flex items-center justify-between">
                         <div>
-                            <p className="font-bold">Buffet de Abogado</p>
-                            <p className="text-sm">Herrera y Perez</p>
+                            <p className="font-bold">Buffet de abogados</p>
+                            <p className="text-sm">Herrera y Pérez</p>
                         </div>
                         <div className="flex items-center space-x-4">
-                            <p className="text-sm">Botón acceso Ficha</p>
+                            <p className="text-sm">Acceso a ficha</p>
                             <button className="w-6 h-6 bg-white rounded-full"></button>
                             <p className="text-sm">Pinchar círculo blanco</p>
                         </div>
@@ -40,11 +50,11 @@ function Filtro1() {
 
                     <div className="bg-black text-white rounded-lg p-4 flex items-center justify-between">
                         <div>
-                            <p className="font-bold">Centro de Mediación</p>
-                            <p className="text-sm">Capputo Torres</p>
+                            <p className="font-bold">Centro de mediación</p>
+                            <p className="text-sm">Caputto Torres</p>
                         </div>
                         <div className="flex items-center space-x-4">
-                            <p className="text-sm">Botón acceso Ficha</p>
+                            <p className="text-sm">Acceso a ficha</p>
                             <button className="w-6 h-6 bg-white rounded-full"></button>
                             <p className="text-sm">Pinchar círculo blanco</p>
                         </div>

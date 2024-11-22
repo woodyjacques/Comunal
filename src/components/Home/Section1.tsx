@@ -1,15 +1,22 @@
 function Section1() {
     return (
-        <section className="bg-yellow-500 py-12">
+        <section
+            className="py-12 font-quicksand"
+            style={{
+                backgroundImage: "url('https://static.vecteezy.com/system/resources/previews/001/339/645/non_2x/glowing-stylish-honeycomb-background-free-vector.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+            }}
+        >
             <div className="max-w-6xl mx-auto px-4 text-center">
                 <div className="mb-8">
                     <div className="relative h-64 md:h-80">
                         <img
-                            src="https://media.istockphoto.com/id/655540014/es/foto/comercial-icono-de-carro-de-teclado-de-la-computadora.jpg?s=170667a&w=0&k=20&c=6R9rKElbt5-i_l8x5D0lMBMx-GZ3YJ9ckG2SU-o2AlA="
+                            src="https://img.freepik.com/fotos-premium/carrito-compras-linea-teclado_1189466-3833.jpg"
                             alt="Teclado"
                             className="w-full h-full object-cover rounded-lg"
                         />
-                        <h1 className="absolute inset-0 flex items-center justify-center text-6xl md:text-7xl font-bold text-yellow-500">
+                        <h1 className="absolute inset-0 flex items-center justify-center text-6xl md:text-7xl font-bold text-yellow-400">
                             Busca y Encuentra RM
                         </h1>
                     </div>
@@ -31,15 +38,6 @@ function Section1() {
                             Encuentra
                         </button>
                         <span className="text-3xl text-red-600">🔍</span>
-                    </div>
-
-                    <div className="bg-cyan-400 text-black text-sm p-4 rounded-lg shadow-md max-w-md relative">
-                        <span className="absolute top-2 left-2 w-10 h-10 transform rotate-[-15deg]">
-                            <img src="https://ayto-reocin.com/wp-content/uploads/2021/02/alerta-logo.jpg" alt="Alerta" className="w-full h-full object-contain" />
-                        </span>
-                        <p className="pl-8">
-                            La pestaña Rubro podría considerar falta de ortografías, sinónimos de palabras y considerar palabras con falta de ortografía, quizás mediante Inteligencia Artificial. Así como ocurre en Google.
-                        </p>
                     </div>
                 </div>
 
